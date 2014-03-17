@@ -1,0 +1,10 @@
+build/
+dist/
+*.pyc
+*.pyo
+
+lib/
+bin/
+
+*.iml
+.idea/
