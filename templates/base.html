@@ -8,6 +8,11 @@
   <title>Modulab</title>
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 70px; /* accounts for fixed navbar */
+    }
+  </style>
   {% block extra_stylesheets %}
   {% endblock %}
 
@@ -19,6 +24,13 @@
   <![endif]-->
 </head>
 <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-right">
+        <li><div><a href="" class="btn btn-success navbar-btn">Sign in</a></div></li>
+      </ul>
+    </div>
+  </nav>
   {% block content %}
   {% endblock %}
 
