@@ -25,9 +25,15 @@
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
       <ul class="nav navbar-nav navbar-right">
-        <li><div><a href="" class="btn btn-success navbar-btn">Sign in</a></div></li>
+        <li><div>
+          {% if user.is_authenticated %}
+            <a href="" class="btn btn-success navbar-btn">Sign out</a>
+          {% else %}
+            <a href="" class="btn btn-success navbar-btn">Login</a>
+          {% endif %}
+        </div></li>
       </ul>
     </div>
   </nav>
